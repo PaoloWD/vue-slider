@@ -53,8 +53,12 @@ const app = createApp({
     onClickImg(index) {
       this.currentImageIndex = index;
     },
+
+    stopTimer() {
+      clearInterval(myInterval);
+    },
   },
   mounted() {
-    setInterval(this.onClickNext, 1000);
+    myInterval = setInterval(this.onClickNext, 1000);
   },
 }).mount("#app");
