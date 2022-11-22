@@ -63,6 +63,6 @@ const app = createApp({
     },
   },
   mounted() {
-    myInterval = setInterval(this.onClickNext, 1000);
+    this.startTimer();
   },
 }).mount("#app");
