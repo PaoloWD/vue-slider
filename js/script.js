@@ -54,4 +54,7 @@ const app = createApp({
       this.currentImageIndex = index;
     },
   },
+  mounted() {
+    setInterval(this.onClickNext, 1000);
+  },
 }).mount("#app");
