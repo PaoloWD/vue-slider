@@ -57,6 +57,10 @@ const app = createApp({
     stopTimer() {
       clearInterval(myInterval);
     },
+
+    startTimer() {
+      setInterval(this.onClickNext, 1000);
+    },
   },
   mounted() {
     myInterval = setInterval(this.onClickNext, 1000);
